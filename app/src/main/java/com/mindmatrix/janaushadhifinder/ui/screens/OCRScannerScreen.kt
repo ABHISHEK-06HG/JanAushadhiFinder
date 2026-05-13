@@ -69,11 +69,11 @@ fun OCRScannerScreen(navController: NavController) {
                         Icon(Icons.Outlined.ArrowBack, contentDescription = "Back", tint = Color.White)
                     }
                 },
-                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = Color.Black.copy(alpha = 0.7f))
+                colors = TopAppBarDefaults.centerAlignedTopAppBarColors(containerColor = PrimaryBlue)
             )
         }
     ) { padding ->
-        Box(modifier = Modifier.fillMaxSize().background(Color.Black).padding(padding)) {
+        Box(modifier = Modifier.fillMaxSize().background(Color.White).padding(padding)) {
             if (hasCameraPermission) {
                 CameraPreview(
                     modifier = Modifier.fillMaxSize(),
@@ -86,7 +86,7 @@ fun OCRScannerScreen(navController: NavController) {
             } else {
                 Text(
                     "Camera permission is required to scan medicine labels.",
-                    color = Color.White,
+                    color = PrimaryBlue,
                     modifier = Modifier.align(Alignment.Center).padding(32.dp),
                     textAlign = TextAlign.Center
                 )
@@ -103,7 +103,7 @@ fun OCRScannerScreen(navController: NavController) {
                     modifier = Modifier.fillMaxWidth().height(150.dp),
                     color = Color.Transparent,
                     shape = RoundedCornerShape(12.dp),
-                    border = androidx.compose.foundation.BorderStroke(2.dp, Color.White.copy(alpha = 0.5f))
+                    border = androidx.compose.foundation.BorderStroke(2.dp, PrimaryBlue.copy(alpha = 0.5f))
                 ) {}
             }
 
@@ -112,19 +112,19 @@ fun OCRScannerScreen(navController: NavController) {
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .fillMaxWidth()
-                    .background(Color.Black.copy(alpha = 0.7f), RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp))
+                    .background(Color.White.copy(alpha = 0.9f), RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp))
                     .padding(24.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 if (scannedText.isNotEmpty()) {
                     Text(
                         "Detected Text:",
-                        color = Color.White.copy(alpha = 0.6f),
+                        color = TextSecondary,
                         fontSize = 12.sp
                     )
                     Text(
                         scannedText,
-                        color = Color.White,
+                        color = PrimaryBlue,
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
                         textAlign = TextAlign.Center,
@@ -132,7 +132,7 @@ fun OCRScannerScreen(navController: NavController) {
                     )
                     Button(
                         onClick = {
-                            // TODO: Pass result back to search
+                            // Pass result back to search
                             navController.previousBackStackEntry?.savedStateHandle?.set("scanned_query", scannedText)
                             navController.popBackStack()
                         },
@@ -145,12 +145,12 @@ fun OCRScannerScreen(navController: NavController) {
                 } else {
                     Text(
                         "Align medicine label within the box to scan",
-                        color = Color.White,
+                        color = PrimaryBlue,
                         fontSize = 14.sp,
                         textAlign = TextAlign.Center
                     )
                     Spacer(modifier = Modifier.height(16.dp))
-                    CircularProgressIndicator(color = Color.White, modifier = Modifier.size(24.dp))
+                    CircularProgressIndicator(color = PrimaryBlue, modifier = Modifier.size(24.dp))
                 }
             }
         }

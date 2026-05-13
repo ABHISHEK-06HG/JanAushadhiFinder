@@ -80,6 +80,9 @@ dependencies {
     // ML Kit
     implementation(libs.mlkit.text.recognition)
 
+    // JSON Parsing
+    implementation(libs.gson)
+
     // Debug
     debugImplementation(libs.androidx.ui.tooling)
 }

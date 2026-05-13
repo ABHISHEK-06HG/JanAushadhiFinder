@@ -1,5 +1,10 @@
 # Project exclude paths
 /.gradle/
 /app/build/
-/app/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes/
 /build/
+*.hprof
+*.pyc
+.idea/
+.DS_Store
+local.properties
+capture/
