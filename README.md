@@ -8,7 +8,7 @@
 <img src="splash_screen.jpeg" width="300">
 
 ## State Selection Screen
-<img src="state_selection.jpeg" width="300">
+<img src="state_selection.jpg" width="300">
 
 ## Medicine Search Screen
 <img src="medicine_search.jpeg" width="300">
