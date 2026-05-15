@@ -5,25 +5,25 @@
 # 📸 Project Screenshots
 
 ## Splash Screen
-<img src="splash_screen.jpeg" width="300">
+<img src="splash_screen.jpeg.jpeg" width="300">
 
 ## State Selection Screen
-<img src="state_selection.jpg" width="300">
+<img src="state_selection.jpeg.jpeg" width="300">
 
 ## Medicine Search Screen
-<img src="medicine_search.jpeg" width="300">
+<img src="medicine_search.jpeg.jpeg" width="300">
 
 ## Nearby Stores Screen
-<img src="nearby_stores.jpeg" width="300">
+<img src="nearby_stores.jpeg.jpeg" width="300">
 
 ## Map Navigation Screen
-<img src="map_navigation.jpeg" width="300">
+<img src="map_navigation.jpeg.jpeg" width="300">
 
 ## Health Reminders Screen
-<img src="health_reminders.jpeg" width="300">
+<img src="health_reminders.jpeg.jpeg" width="300">
 
 ## Add Reminder Screen
-<img src="add_reminder.jpeg" width="300">
+<img src="add_reminder.jpeg.jpeg" width="300">
 
 
 ---
